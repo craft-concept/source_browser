@@ -1,5 +1,5 @@
 SourceBrowser::Engine.routes.draw do
-  # resources :objects, only: :show
-
-  get "objects/*id" => "objects#show", as: :object, format: false
+  root "source#index"
+  get "*id" => "source#show", as: :browse, format: false, defaults: {format: 'html'}
+  get "objects/*id" => "objects#show", as: :object, format: false, defaults: {format: 'html'}
 end

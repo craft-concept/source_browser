@@ -1,7 +1,8 @@
 module SourceBrowser
   class ObjectsController < ApplicationController
     def show
-      @object = git.object(params[:id])
+      @path = params[:id]
+      @object = git.object(@path)
       render body: @object.contents
     end
   end

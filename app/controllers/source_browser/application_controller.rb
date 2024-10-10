@@ -1,11 +1,6 @@
-require "git"
-
 module SourceBrowser
   class ApplicationController < ActionController::Base
-    private
-
-    def git
-      @git ||= Git.open(Rails.root)
-    end
+    delegate :git, to: SourceBrowser
+    helper_method :git
   end
 end

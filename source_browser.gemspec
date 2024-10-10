@@ -24,4 +24,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", ">= 8.0.0.beta1"
   spec.add_dependency "git", ">= 1.18.0"
+  spec.add_dependency "rouge", ">= 4.4.0"
 end

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @path %></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= yield :head %>
+
+  <%= stylesheet_link_tag    "source_browser/application", media: "all" %>
+  <style>
+    .rouge-line-table {
+      border-collapse: collapse;
+    }
+    .code { flex-grow: 1;}
+    <%= Rouge::Themes::Molokai.render(scope: '.code')%>
+  </style>
+</head>
+<body>
+  <main style="display: flex; gap: 1rem">
+    <nav style="max-width: 500px; flex-shrink: 0; overflow: auto;">
+      <ul>
+        <% @files.each do |path, _| %>
+          <li>
+            <%= link_to_unless_current path, browse_path(":" + path) %>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+    <div class="code"><%= yield %></div>
+  </main>
+</body>
+</html>

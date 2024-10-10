@@ -1,0 +1,8 @@
+{
+  "rubyLsp.formatter": "rubocop",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp"
+  }
+}

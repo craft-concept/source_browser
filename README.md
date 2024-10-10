@@ -21,6 +21,12 @@ Or install it yourself as:
 $ gem install source_browser
 ```
 
+
+Mount the engine in your `config/routes.rb`
+```rb
+mount SourceBrowser::Engine, at: "/source"
+```
+
 ## Contributing
 Contribution directions go here.
 

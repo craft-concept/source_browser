@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    source_browser (0.1.0)
+    source_browser (0.2.0)
       git (~> 2.3.0)
       rails (~> 8.0.0.beta1)
       rouge (~> 4.4.0)

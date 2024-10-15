@@ -3,8 +3,8 @@ require_relative "lib/source_browser/version"
 Gem::Specification.new do |spec|
   spec.name        = "source_browser"
   spec.version     = SourceBrowser::VERSION
-  spec.authors     = [ "Jeff Peterson", "Matt Tognetti" ]
-  spec.email       = [ "jeff@concept.love", "matt@concept.love" ]
+  spec.authors     = ["Jeff Peterson", "Matt Tognetti"]
+  spec.email       = ["jeff@concept.love", "matt@concept.love"]
   spec.homepage    = "https://github.com/craft-concept/source_browser"
   spec.summary     = "Rails plugin for browsing source code"
   spec.description = "SourceBrowser is a Rails engine for browsing source code. It is designed to be used in a Rails application that is serving web pages to users."
